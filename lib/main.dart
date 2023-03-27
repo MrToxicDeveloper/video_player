@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:video_player_2/homescreen/view/home_screen_view.dart';
 import 'package:video_player_2/screens/videoplayer/provider/video_provider.dart';
 import 'package:video_player_2/screens/videoplayer/view/video_player_view.dart';
 
@@ -13,6 +14,7 @@ void main() {
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (context) => VideoPlayerView(),
+          'home': (context) => HomeScreen(),
         },
       ),
     ),
